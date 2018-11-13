@@ -18,7 +18,7 @@ class Projects extends Component {
         <div className='project movie'>
 
         </div>
-        <div className='project swapi'>
+        <div className='project pokemon'>
 
         </div>
       </div>

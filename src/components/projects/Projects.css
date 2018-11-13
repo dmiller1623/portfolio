@@ -6,4 +6,32 @@
 .project {
   display: flex;
   flex-direction: column;
+  width: 45rem;
+  height: 28rem;
+  cursor: pointer;
+}
+
+.neighborhood {
+  background-image: url('../../images/neighborhood1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.project:hover {
+  opacity: 1;
+} 
+
+.movie {
+  background-image: url('../../images/movie1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.pokemon {
+  background-image: url('../../images/pokemon1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
 }
