@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './Projects.css'
 import rightArrow from '../../images/right-arrow.png'
 import leftArrow from '../../images/left-arrow.png'
+import neighborhood1 from '../../images/neighborhood1.png';
+import pokemon1 from '../../images/pokemon1.png'
+import movie1 from '../../images/movie1.png'
+import github from '../../images/github-link.png'
 
 class Projects extends Component {
   constructor() {
@@ -16,16 +20,16 @@ class Projects extends Component {
       <div className='projects-container'>
         <h1>Projects</h1>
         <div className='project neighborhood'>
-          <img src={leftArrow}/>
-          <img src={rightArrow}/>
+          <img className='project-image' src={neighborhood1}/>
+          <img className='github-link' src={github}/>
         </div>
         <div className='project movie'>
-          <img src={leftArrow}/>
-          <img src={rightArrow}/>
+        
+          <img className='project-image' src={movie1}/>
         </div>
         <div className='project pokemon'>
-          <img src={leftArrow}/>
-          <img src={rightArrow}/>
+     
+          <img className='project-image' src={pokemon1}/>
         </div>
       </div>
     )
