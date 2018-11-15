@@ -52,6 +52,10 @@
   height: 5rem;
 }
 
+.menu-button {
+  
+}
+
 .button-title {
   transition: ease-in all .4s;
   visibility: hidden;

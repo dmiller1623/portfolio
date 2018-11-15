@@ -1,17 +1,32 @@
 import React, { Component } from 'react';
 import github from '../../images/github-link.png'
 import folder from '../../images/folder.png'
+import menu from '../../images/menu.png'
 import './Menu.css'
 
 class Menu extends Component {
   constructor() {
     super();
-    this.state ={
-
+    this.state = {
+      active: false
     }
   }
 
   render() {
+    if(!this.state.active) {
+      return (
+        <div className='menu-container'>
+           <div className='heading-section'>
+            <h1 className='heading-name'>Dennis Miller</h1>
+            <h1 className='heading-title'>FrontEnd Developer</h1>
+            <img className='heading-image' src='https://sg.fiverrcdn.com/photo2s/115792331/original/24e73b206afe0be4da2b941ab06bb09efe2a10a0.jpeg?1534395867'/>
+          </div>
+          <div className='navigation-section'>
+           <img className='menu-button' src={menu}/>
+          </div>
+        </div>
+      )
+    }
     return (
       <div className='menu-container'>
         <div className='heading-section'>
