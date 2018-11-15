@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import github from '../../images/github-link.png'
 import folder from '../../images/folder.png'
 import './Navigation.css'
+import Projects from '../projects/Projects';
 
 class Navigation extends Component {
   constructor() {
@@ -18,7 +19,11 @@ class Navigation extends Component {
   }
 
   render() {
-    // if(this.state.view === 'projects')
+    if(this.state.view === 'projects') {
+      return (
+        <Projects></Projects>
+      )
+    }
     return (
       <div className='navigation-container'>
         <div className='heading-section'>
@@ -35,7 +40,7 @@ class Navigation extends Component {
           </div>
           <div className='projects-section'>
             <h1 className='button-title'>Projects</h1>
-            <img className='projects-image' src={folder}/>
+            <img onClick={() => this.handleView('projects')} className='projects-image' src={folder}/>
           </div>
         </div>
       </div>
