@@ -8,11 +8,12 @@
 .project {
   display: flex;
   flex-direction: row;
-  width: 45rem;
-  height: 28rem;
+  width: 70%;
+  height: 30rem;
   cursor: pointer;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem;
 }
 
 .neighborhood {
@@ -47,5 +48,5 @@
 }
 
 .github-link {
-  
+  position: absolute;
 }

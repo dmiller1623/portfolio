@@ -5,10 +5,41 @@
   flex-direction: column;
 }
 
+.active {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+
+.not-active {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation-section {
   width: 100%;
   height: 50%;
   background-color: black;
+}
+
+.menu-button {
+  /* position: absolute; */
+  /* bottom: 10%; */
+  width: 5rem;
+  height: 5rem;
+  /* z-index: 1; */
+  /* left: 50%; */
+}
+
+.menu-button:hover {
+  animation: delay 1.5s linear infinite;
+  cursor: pointer;
+  /* transform: scale(1); */
 }
 
 .github-image {
@@ -17,37 +48,44 @@
   background-repeat: no-repeat;
   width: 6rem;
   height: 6rem;
-  list-style: none;
   position: absolute;
-  top: 575px;
   visibility: hidden;
-  transition: left 0.5s ease-in;
 }
 
 .projects-image {
+  cursor: pointer;
   width: 5rem;
   height: 5rem;
   list-style: none;
-  /* overflow: hidden; */
   visibility: hidden;
   position: absolute;
-  top: 575px;
-  transition: top 0.5s ease-in-out;
 }
 
-ul.active .github-image {
-  visibility: visible;
+.bio-image {
   cursor: pointer;
-  left: 400px;
-  /* top: 500px; */
+  width: 5rem;
+  height: 5rem;
+  list-style: none;
+  visibility: hidden;
+  position: absolute;
 }
 
-ul.active .projects-image {
+.active .github-image {
   visibility: visible;
-  /* left: 518px; */
-  /* transition-delay: 1s; */
-  top: 450px;
-  /* transform: scale(1); */
+  transform: translate(-100px, -70px);
+  transition: 0.5s ease-in-out;
+}
+
+.active .projects-image {
+  transform: translate(2px, -115px);
+  transition: 0.5s ease-in-out 0.2s;
+  visibility: visible;
+}
+
+.active .bio-image {
+  visibility: visible;
+  transform: translate(105px, -80px);
+  transition: 0.5s ease-in-out 0.4s;
 }
 
 .heading-section {
@@ -80,34 +118,11 @@ ul.active .projects-image {
   opacity: 0.5;
 }
 
-.menu-button {
-  position: fixed;
-  top: 550px;
-  left: 50%;
-  width: 5rem;
-  height: 5rem;
-  z-index: 1;
-}
-
-.menu-button:hover {
-  animation: delay 1.5s linear infinite;
-  cursor: pointer;
-  /* transform: scale(1); */
-}
-
-/* .button-title {
-  transition: ease-in all .4s;
-  visibility: hidden;
+.hover-heading {
+  position: absolute;
+  bottom: 2%;
   color: white;
-} */
-
-/* .projects-section:hover .button-title {
-  visibility: visible;
 }
-
-.github-section:hover .button-title {
-  visibility: visible;
-} */
 
 @keyframes delay {
   0% {
