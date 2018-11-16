@@ -16,21 +16,11 @@ class Projects extends Component {
   }
 
   render() {
+    let imageRoute = this.props.img.toString()
+    console.log(imageRoute)
     return (
       <div className='projects-container'>
-        <h1>Projects</h1>
-        <div className='project neighborhood'>
-          <img className='project-image' src={neighborhood1}/>
-          <img className='github-link' src={github}/>
-        </div>
-        <div className='project movie'>
-        
-          <img className='project-image' src={movie1}/>
-        </div>
-        <div className='project pokemon'>
-     
-          <img className='project-image' src={pokemon1}/>
-        </div>
+        <img className='project-image' src={require(imageRoute)}/>
       </div>
     )
   }

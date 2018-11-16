@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Navigation.css'
-import Projects from '../projects/Projects';
+import ProjectsContainer from '../projectsContainer/ProjectsContainer';
 import Menu from '../menu/Menu'
 
 class Navigation extends Component {
@@ -21,7 +21,7 @@ class Navigation extends Component {
     if(this.state.view === 'projects') {
       return (
         <div>
-          <Projects></Projects>
+          <ProjectsContainer></ProjectsContainer>
         </div>
       )
     } else {
