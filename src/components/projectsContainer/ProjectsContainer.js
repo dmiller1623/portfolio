@@ -8,11 +8,11 @@ const ProjectsContainer = () => {
     return <Projects 
               key={index}
               {...project}
-    />
+            />
   })
 
   return (
-    <div className='projects-container'>
+    <div className='all-projects-container'>
       {displayProjects}
     </div>
   )
