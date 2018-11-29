@@ -8,8 +8,16 @@ class Projects extends Component {
   constructor() {
     super();
     this.state = {
-      currentImage: 0
+      currentImage: 0,
+      description: false
     }
+  }
+
+  changeDescription = () => {
+    let description = !this.state.description;
+    this.setState({
+      description
+    })
   }
 
   handleImageView = () => {
@@ -32,8 +40,13 @@ class Projects extends Component {
   render() {
     return (
       <div className='projects'>
-        <img className='project-image' src={this.props.img[this.state.currentImage]} onClick={this.handleImageView}/>
-        <a className='github-link' href={this.props.github}/>
+        <div className='image-section'>
+          <img className='project-image' src={this.props.img[this.state.currentImage]} onClick={this.handleImageView}/>
+        </div>
+        <div className='all-links'>
+          <p onClick={this.changeDescription}>Description</p>
+          <a className='github-link' href={this.props.github}></a>
+        </div>
       </div>
     )
   }
