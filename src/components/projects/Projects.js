@@ -44,7 +44,7 @@ class Projects extends Component {
           <img className='project-image' src={this.props.img[this.state.currentImage]} onClick={this.handleImageView}/>
         </div>
         <div className='all-links'>
-          <p onClick={this.changeDescription}>Description</p>
+          <p className='description' onClick={this.changeDescription}>Description</p>
           <a className='github-link' href={this.props.github}></a>
         </div>
       </div>
