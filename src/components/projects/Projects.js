@@ -64,7 +64,7 @@ class Projects extends Component {
           })}
         </div>
         <div className='all-links'>
-          <p className='description' onClick={this.changeDescription}>Description</p>
+          <p className={!this.state.description ? 'description' : 'clicked-description'} onClick={this.changeDescription}>Description</p>
           <a className='github-link' href={this.props.github}></a>
         </div>
       </div>
