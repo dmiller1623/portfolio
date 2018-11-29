@@ -38,10 +38,30 @@ class Projects extends Component {
   }
 
   render() {
+    if(!this.state.description) {
+      return (
+        <div className='projects'>
+          <div className='image-section'>
+            <img className='project-image' src={this.props.img[this.state.currentImage]} onClick={this.handleImageView}/>
+          </div>
+          <div className='all-links'>
+            <p className='description' onClick={this.changeDescription}>Description</p>
+            <a className='github-link' href={this.props.github}></a>
+          </div>
+        </div>
+      )
+    }
     return (
       <div className='projects'>
-        <div className='image-section'>
-          <img className='project-image' src={this.props.img[this.state.currentImage]} onClick={this.handleImageView}/>
+        <div className='description-section'>
+          <h1 className='description-text'>Description</h1>
+          <p className='description-text'>{this.props.description}</p>
+          <h1 className='description-text'>Tech Stack</h1>
+          {this.props.techStack.map((stack, index) => {
+            return <div key={index}>
+                    <p className='description-text'>{stack}</p>
+                  </div>
+          })}
         </div>
         <div className='all-links'>
           <p className='description' onClick={this.changeDescription}>Description</p>

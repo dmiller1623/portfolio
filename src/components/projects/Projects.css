@@ -9,10 +9,19 @@
   margin: 1rem;
 }
 
+.description-section {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  flex-direction: column;
+  padding: 2rem;
+}
+
 .image-section {
   display: flex;
   width: 70%;
   height: 100%;
+  padding: 2rem;
 }
 
 .all-links {
@@ -45,5 +54,9 @@
 .description {
   height: 2rem;
   width: 2rem;
+  color: white;
+}
+
+.description-text {
   color: white;
 }
