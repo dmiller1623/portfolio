@@ -3,23 +3,34 @@
   flex-direction: row;
   width: 100%;
   height: 30rem;
-  cursor: pointer;
   justify-content: space-between;
   align-items: center;
   margin: 1rem;
+}
+
+.description-section {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 .image-section {
   display: flex;
   width: 70%;
   height: 100%;
+  padding: 2rem;
+  cursor: pointer;
 }
 
 .all-links {
-  border: 2px solid white;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   display: flex;
   width: 30%;
-  height: 100%;
+  height: 99%;
 }
 
 .project-image {
@@ -40,8 +51,22 @@
   height: 6rem;
 }
 
-.heroku-link {
-  height: 2rem;
-  width: 2rem;
+.description {
   color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.description-text {
+  color: white;
+}
+
+.clicked-description {
+  font-size: 2rem;
+  cursor: pointer;
+  color: red;
+}
+
+.description-text-nav {
+  cursor: pointer;
 }
