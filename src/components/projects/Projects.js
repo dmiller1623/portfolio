@@ -54,7 +54,7 @@ class Projects extends Component {
     return (
       <div className='projects'>
         <div className='description-section'>
-          <h1 className='description-text'>Description</h1>
+          <h1 className='description-text'>About</h1>
           <p className='description-text'>{this.props.description}</p>
           <h1 className='description-text'>Tech Stack</h1>
           {this.props.techStack.map((stack, index) => {
