@@ -55,13 +55,21 @@
   color: white;
   cursor: pointer;
   font-size: 2rem;
+  font-family: 'Bangers', cursive;
 }
 
 .description-text {
   color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.description-text-heading {
+  color: white;
+  font-family: 'Bangers', cursive;
 }
 
 .clicked-description {
+  font-family: 'Bangers', cursive;
   font-size: 2rem;
   cursor: pointer;
   color: red;
