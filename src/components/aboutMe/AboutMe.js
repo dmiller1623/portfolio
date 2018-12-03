@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
+import './AboutMe.css'
 
-class About extends Component {
-  constructor {
+class AboutMe extends Component {
+  constructor() {
     super();
     this.state = {
-      
+
     }
   }
 
-  render () {
+  render() {
     return (
       <div>
-
+        hello
       </div>
     )
   }
 }
+
+export default AboutMe; 
