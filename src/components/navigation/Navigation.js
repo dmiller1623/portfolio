@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './Navigation.css'
+import './Navigation.css';
+import AboutMe from '../aboutMe/AboutMe';
 import ProjectsContainer from '../projectsContainer/ProjectsContainer';
-import Menu from '../menu/Menu'
+import Menu from '../menu/Menu';
 
 class Navigation extends Component {
   constructor() {
     super();
     this.state = {
-      view: 'projects'
+      view: 'about'
     }
   }
 
@@ -24,6 +25,12 @@ class Navigation extends Component {
           <ProjectsContainer></ProjectsContainer>
         </div>
       )
+    } else if(this.state.view === 'about') {
+        return(
+          <div>
+            <AboutMe handleView={this.handleView}></AboutMe>
+          </div>
+        )
     } else {
       return (
         <div className='navigation-container'>

@@ -88,6 +88,7 @@ class Menu extends Component {
             <img
               className='bio-image'
               src={bio}
+              onClick={() => this.props.handleView('about')}
               onMouseOver={(event) => this.handleHover(event)}
               onMouseLeave={this.handleExitHover}
             />
@@ -99,4 +100,4 @@ class Menu extends Component {
   }
 }
 
-export default Menu
+export default Menu;
