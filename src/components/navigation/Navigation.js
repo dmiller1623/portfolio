@@ -8,7 +8,7 @@ class Navigation extends Component {
   constructor() {
     super();
     this.state = {
-      view: ''
+      view: 'about'
     }
   }
 
