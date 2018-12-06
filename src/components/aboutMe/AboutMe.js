@@ -15,8 +15,13 @@ class AboutMe extends Component {
     return (
       <div className='about-section'>
         <img className='denver-image' src={denver}/>
-        <div className='profile-image'>
-          <img className='profile-pic' src={profileImage}/>
+        <div className='profile-section'>
+          <div className='top-profile'>
+            <img className='profile-pic' src={profileImage}/>
+          </div>
+          <div className='bottom-profile'>
+            <a href='https://github.com/dmiller1623'>Github Link</a>
+          </div>
         </div>
       </div>
     )
