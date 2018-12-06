@@ -10,6 +10,31 @@
   opacity: 0.6;
 }
 
+.profile-section {
+ z-index: 1;
+ position: absolute;
+ background-color: black;
+ opacity: 0.9I;
+ width: 25rem;
+ height: 35rem;
+ left: 50px;
+ top: 30px;
+ border-radius: 15px;
+}
+
+.top-profile {
+  height: 70%;
+
+}
+
 .profile-pic {
-  
+  width: 12rem;
+  height: 13rem;
+  border-radius: 100px;
+}
+
+.bottom-profile {
+  height: 30%;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
 }
