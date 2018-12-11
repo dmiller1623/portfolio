@@ -14,7 +14,13 @@ class AboutMe extends Component {
   render() {
     return (
       <div className='about-section'>
-        <img className='denver-image' src={denver}/>
+        <div>
+
+        </div>
+        <div>
+          
+        </div>
+        {/* <img className='denver-image' src={denver}/>
         <div className='profile-section'>
           <div className='top-profile'>
             <img className='profile-pic' src={profileImage}/>
@@ -22,7 +28,7 @@ class AboutMe extends Component {
           <div className='bottom-profile'>
             <a href='https://github.com/dmiller1623'>Github Link</a>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   }

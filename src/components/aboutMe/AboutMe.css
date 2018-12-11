@@ -1,6 +1,7 @@
 .about-section {
   height: 100vh;
   width: 100%;
+  display: flex;
 }
 
 .denver-image {
@@ -11,30 +12,27 @@
 }
 
 .profile-section {
- z-index: 1;
- position: absolute;
+ display: flex;
+ justify-content: center;
  background-color: black;
- opacity: 0.9I;
- width: 25rem;
+ opacity: 0.9;
+ width: 70rem;
  height: 35rem;
- left: 50px;
- top: 30px;
- border-radius: 15px;
+ /* border-radius: 15px; */
 }
 
 .top-profile {
-  height: 70%;
-
+  height: 100%;
+  width: 50%;
 }
 
 .profile-pic {
   width: 12rem;
   height: 13rem;
-  border-radius: 100px;
 }
 
 .bottom-profile {
-  height: 30%;
+  height: 100%;
+  width: 50%;
   background-color: white;
-  border-radius: 0 0 15px 15px;
 }
