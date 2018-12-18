@@ -11,27 +11,19 @@
   opacity: 0.6;
 }
 
-.profile-section {
- display: flex;
- justify-content: center;
- background-color: black;
- opacity: 0.9;
- width: 70rem;
- height: 35rem;
-}
+.about-container {
+  display: flex;
+  width: 80%;
+  height: 20vh
+} 
 
-.top-profile {
-  height: 100%;
+.about-section left {
   width: 50%;
+  height: 100%:
 }
 
-.profile-pic {
-  width: 12rem;
-  height: 13rem;
-}
-
-.bottom-profile {
-  height: 100%;
+.about-section right {
   width: 50%;
-  background-color: white;
+  height: 100%:
 }
+
