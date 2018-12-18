@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import './Projects.css'
-import rightArrow from '../../images/right-arrow.png'
-import leftArrow from '../../images/left-arrow.png'
-import github from '../../images/github-link.png'
 
 class Projects extends Component {
   constructor() {

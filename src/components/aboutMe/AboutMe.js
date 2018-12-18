@@ -13,22 +13,24 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <div className='about-section'>
-        <div>
-
+      <div className='about'>
+        <img className='denver-image' src={denver}/>
+        <div className='about-container'>
+          <section className='about-section left first'></section>
+          <section className='about-section right first'></section>
         </div>
-        <div>
-          
+        <div className='about-container'>
+          <section className='about-section right'></section>
+          <section className='about-section left'></section>
         </div>
-        {/* <img className='denver-image' src={denver}/>
-        <div className='profile-section'>
-          <div className='top-profile'>
-            <img className='profile-pic' src={profileImage}/>
-          </div>
-          <div className='bottom-profile'>
-            <a href='https://github.com/dmiller1623'>Github Link</a>
-          </div>
-        </div> */}
+        <div className='about-container'>
+          <section className='about-section left'></section>
+          <section className='about-section right'></section>
+        </div>
+        <div className='about-container'>
+          <section className='about-section right last'></section>
+          <section className='about-section left last'></section>
+        </div>
       </div>
     )
   }
