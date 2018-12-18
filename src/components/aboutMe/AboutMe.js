@@ -16,8 +16,8 @@ class AboutMe extends Component {
       <div className='about'>
         <img className='denver-image' src={denver}/>
         <div className='about-container'>
-          <section className='about-section left'></section>
-          <section className='about-section right'></section>
+          <section className='about-section left first'></section>
+          <section className='about-section right first'></section>
         </div>
         <div className='about-container'>
           <section className='about-section right'></section>
@@ -28,8 +28,8 @@ class AboutMe extends Component {
           <section className='about-section right'></section>
         </div>
         <div className='about-container'>
-          <section className='about-section right'></section>
-          <section className='about-section left'></section>
+          <section className='about-section right last'></section>
+          <section className='about-section left last'></section>
         </div>
       </div>
     )

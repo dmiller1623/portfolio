@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   overflow: scroll;
+  
 }
 
 .denver-image {
@@ -18,8 +19,9 @@
 .about-container {
   display: flex;
   width: 80%;
-  height: 40vh;
+  height: 30rem;
   z-index: 1;
+  /* margin: 3rem; */
 } 
 
 .left {
@@ -32,5 +34,13 @@
   background-color: white;
   width: 50%;
   height: 100%;
+}
+
+.first {
+  margin-top: 4rem;
+}
+
+.last {
+  margin-bottom: 4rem;
 }
 
