@@ -13,23 +13,23 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <div className='about-section'>
+      <div className='about'>
         <img className='denver-image' src={denver}/>
         <div className='about-container'>
           <section className='about-section left'></section>
           <section className='about-section right'></section>
         </div>
         <div className='about-container'>
-          <section className='about-section left'></section>
           <section className='about-section right'></section>
+          <section className='about-section left'></section>
         </div>
         <div className='about-container'>
           <section className='about-section left'></section>
           <section className='about-section right'></section>
         </div>
         <div className='about-container'>
-          <section className='about-section left'></section>
           <section className='about-section right'></section>
+          <section className='about-section left'></section>
         </div>
       </div>
     )
