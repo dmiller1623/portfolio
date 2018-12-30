@@ -21,7 +21,6 @@
   width: 80%;
   height: 30rem;
   z-index: 1;
-  /* margin: 3rem; */
 } 
 
 .left {
@@ -42,5 +41,9 @@
 
 .last {
   margin-bottom: 4rem;
+}
+
+.profile-image {
+  width: 15rem;
 }
 

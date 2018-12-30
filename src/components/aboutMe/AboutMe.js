@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './AboutMe.css'
 import denver from '../../images/denver.jpg'
-import profileImage from '../../images/img.png'
+import profileImage from '../../images/img3.PNG'
 import resume from '../../files/resume.pdf'
 
 class AboutMe extends Component {
@@ -18,7 +18,8 @@ class AboutMe extends Component {
         <img className='denver-image' src={denver}/>
         <div className='about-container'>
           <section className='about-section left first'>
-            <a href={resume} download={resume}>Download</a>
+            <a href={resume} download={resume}>Resume</a>
+            <img className='profile-image' src={profileImage}/>
           </section>
           <section className='about-section right first'></section>
         </div>
