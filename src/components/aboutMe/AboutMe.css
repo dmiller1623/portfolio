@@ -47,3 +47,9 @@
   width: 15rem;
 }
 
+.heroku-link {
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  color: white;
+  font-size: 2rem;
+}
