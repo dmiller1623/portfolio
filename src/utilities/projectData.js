@@ -26,6 +26,13 @@ const projects = [
     github: 'https://github.com/dmiller1623/byob-frontend',
     description: `An app built to allow a user to check out stats of each Pokemon and build their ultimate team. The user can scroll through to find which Pokemon they want to be on their team, they can create a new trainer along with deleting teams and their profile. All data is stored on the backend`,
     techStack: ['React', 'Node.js']
+  },
+
+  {
+    img: [],
+    github: '',
+    description: '',
+    techStack: []
   }
 ]
 
