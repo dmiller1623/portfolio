@@ -14,7 +14,7 @@ const ProjectsContainer = ({ handleView }) => {
 
   return (
     <div className='all-projects-container'>
-      <img src={home} onClick={() => handleView('')}/>
+      <img className='home-button' src={home} onClick={() => handleView('')}/>
       {displayProjects}
     </div>
   )
