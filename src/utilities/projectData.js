@@ -10,7 +10,8 @@ const projects = [
     img: [neighborhood1, neighborhood2],
     github: 'https://github.com/dmiller1623/Neighborhood-Kickstarter', 
     description: `NeighborHub is an application where users volunteer their help on neighborhood projects.Whether it be fixing an old bench in your neighborhood or painting an elderly neighbors fence, NeighborHub allows neighbors to come together to better their community. A user has the ability to create a project of their own, set the resources needed for the project, and allow other neighbors to write comments on a project with help and/or services they may be able to provide.`,
-    techStack: ['React', 'React Router']
+    techStack: ['React', 'React Router'],
+    heroku: 'https://neighborhood-kickstarter.herokuapp.com/'
   },
 
   {

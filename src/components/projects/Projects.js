@@ -44,6 +44,7 @@ class Projects extends Component {
           <div className='all-links'>
             <p className='description' onClick={this.changeDescription}>Description</p>
             <a className='github-link' href={this.props.github}></a>
+            {this.props.heroku && <a href={this.props.heroku}> See It Live</a>}
           </div>
         </div>
       )
