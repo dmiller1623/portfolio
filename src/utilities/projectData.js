@@ -5,6 +5,7 @@ import pokemon2 from '../images/pokemon2.png'
 import movie1 from '../images/movie1.png'
 import movie2 from '../images/movie3.png'
 import palette from '../images/palette.png'
+import postico from '../images/Postico.png'
 
 const projects = [
   {
@@ -30,10 +31,11 @@ const projects = [
   },
 
   {
-    img: [palette],
+    img: [palette, postico],
     github: 'https://github.com/dmiller1623/pallete-picker',
     description: 'This was the first time I got some experience with the backend using Node.js, Knex and Express. This project allows a user to generate random palettes of colors. The user can lock a certain color they like by clicking the lock button and continue to generate random colors for the other slots until they find something that matches. The user can save projects, and palettes that they like to the backend',
-    techStack: ['Node.js', 'Knex', 'Express', 'jQuery']
+    techStack: ['Node.js', 'Knex', 'Express', 'jQuery'],
+    heroku: 'https://dennispalettepicker.herokuapp.com/'
   }
 ]
 
