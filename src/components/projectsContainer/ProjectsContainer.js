@@ -2,6 +2,7 @@ import React from 'react'
 import Projects from '../projects/Projects'
 import projectData from '../../utilities/projectData'
 import './ProjectsContainer.css'
+import home from '../../images/web-page-home.svg'
 
 const ProjectsContainer = () => {
   const displayProjects = projectData.map((project, index) => {
@@ -13,6 +14,7 @@ const ProjectsContainer = () => {
 
   return (
     <div className='all-projects-container'>
+      <img src={home}/>
       {displayProjects}
     </div>
   )
