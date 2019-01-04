@@ -4,7 +4,7 @@ import projectData from '../../utilities/projectData'
 import './ProjectsContainer.css'
 import home from '../../images/web-page-home.svg'
 
-const ProjectsContainer = () => {
+const ProjectsContainer = ({ handleView }) => {
   const displayProjects = projectData.map((project, index) => {
     return <Projects 
               key={index}
@@ -14,7 +14,7 @@ const ProjectsContainer = () => {
 
   return (
     <div className='all-projects-container'>
-      <img src={home}/>
+      <img src={home} onClick={() => handleView('')}/>
       {displayProjects}
     </div>
   )

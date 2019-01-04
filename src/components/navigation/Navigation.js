@@ -22,7 +22,7 @@ class Navigation extends Component {
     if(this.state.view === 'projects') {
       return (
         <div>
-          <ProjectsContainer></ProjectsContainer>
+          <ProjectsContainer handleView={this.handleView}></ProjectsContainer>
         </div>
       )
     } else if(this.state.view === 'about') {
