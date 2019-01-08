@@ -48,7 +48,7 @@
   background: url('../../images/github-link.png');
   background-size: 5rem;
   background-repeat: no-repeat;
-  width: 6rem;
+  width: 5rem;
   height: 6rem;
 }
 
@@ -78,5 +78,11 @@
 
 .description-text-nav {
   cursor: pointer;
-  
+}
+
+.heroku-link {
+  color: white;
+  font-family: 'Bangers', cursive;
+  text-decoration: none;
+  font-size: 2rem;
 }
