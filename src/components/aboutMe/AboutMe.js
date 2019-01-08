@@ -17,10 +17,10 @@ class AboutMe extends Component {
     return (
       <div className='about'>
         <img className='home-button' src={home} onClick={() => this.props.handleView('')}/>
-        <div>
-
+        <div className='left-side'>
+          <h1>About</h1>
         </div>
-        <div>
+        <div className='right-side'>
 
         </div>
       </div>
